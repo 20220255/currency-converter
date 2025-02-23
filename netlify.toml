@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build && npm run cypress:run"
+  publish = ".next"
+
+[dev]
+  command = "npm run start"
