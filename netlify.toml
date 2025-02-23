@@ -3,7 +3,7 @@
   publish = ".next"
 
 [build.cache]
-  path = "/opt/buildhome/.cache/Cypress"
+  path = "/opt/build/repo/node_modules/.cache/CypressBinary"
 
 [dev]
   command = "npm run start"
