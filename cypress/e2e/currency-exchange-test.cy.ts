@@ -2,7 +2,7 @@
 
 describe('template spec', () => {
   it('passes', () => {
-    const currency = 'PHP';
+    const currency = 'USD';
     const regexPattern = new RegExp(`.\\d+.\\d\\d USD is equal to .\\d+.\\d\\d ${currency}`);
     cy.visit('/')
     cy.get('label')
