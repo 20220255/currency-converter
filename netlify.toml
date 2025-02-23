@@ -2,9 +2,6 @@
   command = "npm run build && npm run cypress:install && npm run cypress:run"
   publish = ".next"
 
-[context.production.environment]
-  NODE_ENV = "production"
-
 [build.environment]
   CYPRESS_CACHE_FOLDER = "/opt/buildhome/.cache/Cypress"
   CI = "true"
