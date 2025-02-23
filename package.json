@@ -10,7 +10,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --headless",
     "cypress:install": "cypress install",
-    "cy:run": "start http://localhost:3000 cypress:run"
+    "cy:run": "npm run build && start-server-and-test start http://localhost:3000 cypress:run"
   },
   "dependencies": {
     "axios": "^1.7.9",

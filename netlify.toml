@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build && npm run cy:run"
+  command = "npm run cy:run"
   publish = ".next"
 
 [build.environment]
