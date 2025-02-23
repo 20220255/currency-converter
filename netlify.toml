@@ -1,9 +1,18 @@
 [build]
-  command = "npm run build && npm run cypress:run"
+  command = "npm run build && npm run cypress:install && npm run cypress:run"
   publish = ".next"
 
-[build.cache]
-  path = "/opt/build/repo/node_modules/.cache/CypressBinary"
+[context.production.environment]
+  NODE_ENV = "production"
 
-[dev]
-  command = "npm run start"
+[build.environment]
+  CYPRESS_CACHE_FOLDER = "/opt/buildhome/.cache/Cypress"
+  CI = "true"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = ["node_modules", "/opt/buildhome/.cache/Cypress"]
