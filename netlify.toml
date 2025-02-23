@@ -2,5 +2,8 @@
   command = "npm run build && npm run cypress:run"
   publish = ".next"
 
+[build.cache]
+  - path = "/opt/buildhome/.cache/Cypress"
+
 [dev]
   command = "npm run start"
