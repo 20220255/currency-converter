@@ -11,7 +11,7 @@
     "cypress:run": "cypress run --headless",
     "cypress:install": "cypress install",
     "cypress:run:verbose": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
-    "cy:start:run": "start-server-and-test start http://localhost:3000 cypress:run:verbose"
+    "cy:start:run": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "dependencies": {
     "axios": "^1.7.9",
