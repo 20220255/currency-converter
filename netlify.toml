@@ -4,3 +4,11 @@
 
 [build.environment]
   NEXT_PUBLIC_EXCHANGE_RATE_API_KEY = "26acf6bfe610074f9b596d7c"
+  CYPRESS_CACHE_FOLDER = "/opt/buildhome/.cache/Cypress"
+
+[cache]
+  [[cache.directories]]
+    path = "/opt/buildhome/.cache/Cypress"
+    #If you are having issues you can also try adding this line.
+    path = "node_modules/.cache/CypressBinary"
+
