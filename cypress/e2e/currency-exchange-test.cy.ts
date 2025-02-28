@@ -1,15 +1,12 @@
 /// <reference types="cypress" />
 
-describe('template spec', () => {
-  it('passes', () => {
-    const currency = 'USD';
-    const regexPattern = new RegExp(`.\\d+.\\d\\d USD is equal to .\\d+.\\d\\d ${currency}`);
-    cy.visit('/')
-    cy.get('label')
-      .contains('To:')
-      .next()
-      .select(currency)
-    cy.get('.convert-button').click()
-    cy.get('.result').contains(regexPattern).should('be.visible')
-  })
+import CurrencyConverterPage from "../support/pageObjects/currencyConverter"
+
+describe('Execute Curreny Exchange', () => {
+  it('should run the currency exchange', () => {
+    const currencyConverterPage = new CurrencyConverterPage();
+    cy.visit('/');
+    const regexPattern = currencyConverterPage.executeConversion('100', 'USD', 'PHP');
+    currencyConverterPage.resultLabel.contains(regexPattern).should('be.visible');
+  });
 })
