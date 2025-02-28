@@ -10,5 +10,5 @@
   [[cache.directories]]
     path = "/opt/buildhome/.cache/Cypress"
     #If you are having issues you can also try adding this line.
-    path = "node_modules/.cache/CypressBinary"
+    #path = "node_modules/.cache/CypressBinary"
 
