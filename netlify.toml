@@ -3,4 +3,4 @@
   publish = ".next" # Replace with your publish directory
 
 [build.environment]
-  NEXT_PUBLIC_EXCHANGE_RATE_API_KEY=26acf6bfe610074f9b596d7c
+  NEXT_PUBLIC_EXCHANGE_RATE_API_KEY = "26acf6bfe610074f9b596d7c"
