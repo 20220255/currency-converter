@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build && npm run cy:start:run"
+  command = "npm run cypress:install && npm run build && npm run cy:start:run"
   publish = ".next" # Replace with your publish directory
 
 [build.environment]
